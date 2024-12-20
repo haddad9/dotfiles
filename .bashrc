@@ -117,6 +117,8 @@ set -o vi
 
 # for gitadd-commit-push (learned this from pak rms46, tribute to him )
 alias ggg='git add . && git commit -m "update changes" && git push'
+alias gp='git push'
+alias gs='git status'
 gg(){
     git add . && git commit -m "$*"
 }
