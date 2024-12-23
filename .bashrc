@@ -130,6 +130,7 @@ gg() {
     fi
 }
 
+
 #alias for docker 
 alias docker='sudo docker'
 
