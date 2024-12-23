@@ -205,8 +205,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
--- TO DO: copy to system clipboar
-
 -- Copy relative path to the clipboard
 vim.api.nvim_create_user_command('CopyRelPath', function()
   vim.api.nvim_call_function('setreg', { '+', vim.fn.fnamemodify(vim.fn.expand '%', ':.') })
