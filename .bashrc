@@ -120,6 +120,7 @@ set -o vi
 # for gitadd-commit-push (learned this from pak rms46, tribute to him )
 alias gp='git push'
 alias gs='git status'
+alias gc='git cherry-pick'
 gg() {
     # check if a commit message is provided
     if [ -z "$*" ]; then
