@@ -1,0 +1,9 @@
+[font]
+normal = ["Agave Nerd Font"]
+size = 17
+
+[font.features]
+"Agave Nerd Font" = ["+ss03", "+ss03", "+ss03"]
+
+
+
