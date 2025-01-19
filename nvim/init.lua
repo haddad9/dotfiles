@@ -120,8 +120,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- Copy relative path to the clipboard
 vim.api.nvim_create_user_command('CopyRelPath', function()
-  vim.api.nvim_call_function('setreg', { '+', vim.fn.fnamemodify(vim.fn.expand '%', ':.') })
+  vim.api.nvim_call_function('setreg', { '+', vim.fn.fnamemodify(vim.fn.expand '#', ':p') })
 end, {})
+
 -- Map the command to keyboard bind
 vim.keymap.set('n', '<leader>yr', '<cmd>CopyRelPath<CR>', { desc = '[Y]ank [R]elative Path' })
 
@@ -393,6 +394,7 @@ require('lazy').setup({
   { import = 'custom.plugins.todo' },
   { import = 'custom.plugins.tsitter' },
   { import = 'custom.plugins.which-key' },
+  { import = 'custom.plugins.indent-blankline' },
 
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
