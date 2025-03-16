@@ -4,8 +4,14 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- default netrw_liststyle to tree
+vim.g.netrw_liststyle = 3
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
+
+-- yank without replacing the value in register
+vim.api.nvim_set_keymap('v', '<leader>p', '"_dP', { noremap = true })
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
