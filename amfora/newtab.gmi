@@ -1,0 +1,17 @@
+# Welcome to Amfora, you are using Dwalord's config
+
+Change this tab in .config/amfora/config.toml
+
+## Internal Pages
+
+=> about:bookmarks Bookmarks
+=> about:subscriptions Subscriptions
+=> about:about All internal pages
+
+## Learn more about Amfora!
+
+=> https://github.com/makeworld-the-better-one/amfora Amfora homepage
+=> https://github.com/makeworld-the-better-one/amfora/wiki Amfora Wiki [GitHub]
+=> gemini://makeworld.space/amfora-wiki/ Amfora Wiki [On Gemini!]
+
+=> gemini://dwarlord.geminauts.com Dwarlord Gemlog

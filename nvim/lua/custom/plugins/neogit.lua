@@ -6,6 +6,14 @@ return {
     'sindrets/diffview.nvim',
   },
   config = function()
-    require('neogit').setup { kind = 'replace' }
+    require('neogit').setup {
+      integrations = {
+        telescope = nil,
+        diffview = false,
+        fzf_lua = nil,
+        mini_pick = nil,
+      },
+      kind = 'replace',
+    }
   end,
 }

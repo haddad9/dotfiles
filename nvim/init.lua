@@ -110,6 +110,12 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+-- tab to move around buffer
+vim.keymap.set('n', '<Tab>', '<Cmd>bnext<CR>', { desc = 'Go to next buffer' })
+vim.keymap.set('n', '<S-Tab>', '<Cmd>bprevious<CR>', { desc = 'Switch to previous buffer' })
+vim.keymap.set('n', '<leader><Tab>', '<Cmd>bfirst<CR>', { desc = 'Go to next buffer' })
+vim.keymap.set('n', '<leader><S-Tab>', '<Cmd>blast<CR>', { desc = 'Go to next buffer' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -398,6 +404,8 @@ require('lazy').setup({
   { import = 'custom.plugins.tsitter' },
   { import = 'custom.plugins.which-key' },
   { import = 'custom.plugins.indent-blankline' },
+  { import = 'custom.plugins.fugitive' },
+  { import = 'custom.plugins.diffview' },
 
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
